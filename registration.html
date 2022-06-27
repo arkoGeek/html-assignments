@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Registration Form</h1>
+  <form action = #>
+    <table>
+      <tbody>
+        <tr>
+          <td style="text-align:right;">User Id: </td>
+          <td><input type="text" name="userid" id="userid" required maxlength="12" minlength="5"></td>
+        </tr>
+        <tr>
+          <td style="text-align:right;">Password: </td>
+          <td><input type="password" name="password" id="password" required maxlength="12" minlength="7"></td>
+        </tr>
+        <tr>
+          <td style="text-align:right;">Name: </td>
+          <td><input type="text" name="name" id="name" required pattern="[A-Za-z]+"></td>
+        </tr>
+        <tr>
+          <td style="text-align:right;">Address: </td>
+          <td><input type="text" name="address" id="address"></td>
+        </tr>
+        <tr>
+          <td style="text-align:right;">Country: </td>
+          <td><select id="countries" required>
+            <option value="#">(Please select a country)</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="England">England</option>
+            <option value="New Zealand">New Zealand</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td style="text-align:right;">ZIP Code: </td>
+          <td><input type="text" name="zipcode" id="zipcode" required pattern="[0-9]+"></td>
+        </tr>
+        <tr>
+          <td style="text-align:right;">Email: </td>
+          <td><input type="email" name="email" id="email" required></td>
+        </tr>
+        <tr>
+          <td style="text-align:right;">Sex : </td>
+          <td><input type="radio" name="sex" id="male" required>Male  <input type="radio" name="sex" id="female" required>Female</td>
+        </tr>
+        <tr>
+          <td style="text-align:right;">Language : </td>
+          <td><input type="checkbox" name="lang" id="eng" required>English  <input type="checkbox" name="lang" id="noneng" required>Non English</td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; text-align:right;">About : </td>
+          <td><textarea name="about" id="about" cols="30" rows="6"></textarea></td>
+        </tr>
+      </tbody>
+      <tr>
+        <td colspan="2" style="text-align: center;"><input type="submit" value="SUBMIT"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
